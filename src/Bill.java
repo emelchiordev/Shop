@@ -4,7 +4,8 @@ public class Bill {
     private Customer customer;
     private Map<Product,Integer> product;
 
-    public Bill(){
+    public Bill(Customer customer){
+
         this.customer = customer;
     }
 
