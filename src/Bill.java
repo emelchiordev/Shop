@@ -2,7 +2,8 @@ import java.util.Map;
 
 public class Bill {
     private Customer customer;
-    private Map<Product,Integer> product;
+    private Map<Product,Integer> product=null;
+
 
     public Bill(Customer customer){
 
@@ -15,7 +16,7 @@ public class Bill {
     public Customer getCustomer(){
         return customer;
     }
-    public Map<Product, Integer> getProucts(){
+    public Map<Product, Integer> getProducts(){
         return product;
     }
 }
