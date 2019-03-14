@@ -1,4 +1,4 @@
-public abstract class Fridge extends Product{
+public class Fridge extends Product{
     private int liter;
     private boolean freezer;
 

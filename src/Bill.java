@@ -2,7 +2,7 @@ import java.util.Map;
 
 public class Bill {
     private Customer customer;
-    private Map<Product,Integer> product=null;
+    private Map<Product,Integer> product;
     private Delivery delivery;
 
 
@@ -26,4 +26,5 @@ public class Bill {
     public double getTotal(){
         return 0;
     }
+
 }
