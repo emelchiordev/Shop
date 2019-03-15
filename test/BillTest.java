@@ -35,7 +35,16 @@ class BillTest {
         int lineNumber = output.split("%n").length;
         assertEquals(20, lineNumber);
     }
+    @Test
+    public void Given_2product_When_generatingBill_Then_displayGoodTotalPrice() {
+        Bill bill = new Bill(client, delivery);
+        bill.addProduct(cafe, 1);
+        bill.addProduct(tv, 1);
+        bill.generate(writerMock);
+        double getTotal = bill.getTotal();
+        assertEquals(322.29, getTotal);
 
+    }
 
 
 }

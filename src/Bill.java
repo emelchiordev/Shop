@@ -5,8 +5,6 @@ public class Bill {
     private Customer customer;
     private Map<Product,Integer> product = new HashMap<>();
     private Delivery delivery;
-    private double total;
-
 
     public Bill(Customer customer, Delivery delivery){
         this.customer = customer;
@@ -48,9 +46,10 @@ public class Bill {
 
     }
     public double getTotal(){
-
+        double total = delivery.getPrice();
         for(Map.Entry<Product,Integer> entry : product.entrySet()){
-            total += (entry.getKey().getPrice()*entry.getValue())+delivery.getPrice();
+
+            total += entry.getKey().getPrice()*entry.getValue();
 
         }
         return total;
