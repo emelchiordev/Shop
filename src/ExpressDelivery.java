@@ -10,9 +10,10 @@ public class ExpressDelivery implements Delivery {
         }else {
             return 9.99;
         }
-   }
+
+}
     @Override
-    public String getInfo() {
-        return "Livraison Express : ";
+    public String getInfo(){
+        return "Mode de livraison : Livraison express";
     }
 }

@@ -18,7 +18,7 @@ public class RelayDelivery implements Delivery{
 
     }
     @Override
-    public String getInfo() {
-        return "Livraison point relay : ";
+    public String getInfo(){
+        return "Mode de livraison : point relay";
     }
 }

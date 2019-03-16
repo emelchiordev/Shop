@@ -4,7 +4,7 @@ public class TakeAwayDelivery implements Delivery{
         return 0;
     }
     @Override
-    public String getInfo() {
-        return "Retrait magasin : ";
+    public String getInfo(){
+        return "Mode de livraison : En entrepot";
     }
 }

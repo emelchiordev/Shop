@@ -4,7 +4,8 @@ public class DeliveryDirect  implements Delivery{
         return 4.99;
     }
     @Override
-    public String getInfo() {
-       return "Livraison Direct : ";
+    public String getInfo(){
+        return "Mode de livraison : Livraison simple";
     }
 }
+
