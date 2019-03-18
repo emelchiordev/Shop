@@ -33,7 +33,7 @@ class BillTest {
         bill.addProduct(tv, 1);
         bill.generate(writerMock);
         int lineNumber = output.split("%n").length;
-        assertEquals(21, lineNumber);
+        assertEquals(20, lineNumber);
     }
     @Test
     public void Given_3productsAndDelivery_When_generatingBill_Then_getGoodTotal() {
