@@ -21,6 +21,9 @@ public class Bill {
         return product;
     }
     public void generate(Writer writer){
+        if (product.isEmpty()){
+            throw new NoProductInBill();
+        }
         writer.start();
         writer.writeLine("HomeShop compagnie");
         writer.writeLine("1 Place Charles de Gaulle, 75008 Paris");
