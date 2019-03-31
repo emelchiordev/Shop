@@ -20,8 +20,7 @@ public class FileWriter implements Writer {
 
     @Override
     public void stop() {
-    ligne ="";
-    try {
+        try {
         Files.write(chemin, String.format(ligne).getBytes());
     }catch (IOException e) {
         System.out.println("Impossible d'écrire dans le fichier");
